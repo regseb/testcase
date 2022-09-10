@@ -1,0 +1,12 @@
+{
+    "name": "testcase",
+    "version": "1.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "docs": "eleventy"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^1.0.2"
+    }
+}
