@@ -20,7 +20,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
     - name: Setup Node.js
@@ -34,20 +38,10 @@ jobs:
         persist-credentials: false
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Generate HTML
       run: npm run docs
-
-  deploy:
-    needs: build
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
