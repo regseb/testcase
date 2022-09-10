@@ -42,14 +42,15 @@ jobs:
 
     - name: Generate HTML
       run: npm run docs
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: '_site'
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: '_site'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
