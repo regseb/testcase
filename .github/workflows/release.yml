@@ -15,6 +15,4 @@ jobs:
         with:
           release-type: node
           package-name: testcase
-          # Définir les extra-files dans le fichier release-please-config.json,
-          # car le type et le jsonpath ne sont pas configurables en YAML.
-          # https://github.com/google-github-actions/release-please-action/issues/797
+          extra-files: src/manifest.json
