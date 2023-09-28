@@ -7,6 +7,8 @@
 
 * Foo ([ed01225](https://github.com/regseb/testcase/commit/ed0122519184fa5608121c39d2d92bcd4532ba96))
 
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
 
 ### Bug Fixes
 
