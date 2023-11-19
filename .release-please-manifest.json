@@ -1,0 +1,6 @@
+{
+  "extra-files": [
+    "webext/manifest-chromium.json",
+    "webext/manifest-firefox.json"
+  ]
+}
