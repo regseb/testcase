@@ -1,13 +1,17 @@
 {
-  "extra-files": [
-    {
-        "type": "json",
-        "path": "webext/manifest-chromium.json",
-        "jsonpath": "$.version"
-    }, {
-        "type": "json",
-        "path": "webext/manifest-firefox.json",
-        "jsonpath": "$.version"
+  "packages": {
+    ".": {
+      "extra-files": [
+        {
+            "type": "json",
+            "path": "webext/manifest-chromium.json",
+            "jsonpath": "$.version"
+        }, {
+            "type": "json",
+            "path": "webext/manifest-firefox.json",
+            "jsonpath": "$.version"
+        }
+      ]
     }
-  ]
+  }
 }
