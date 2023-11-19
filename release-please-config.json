@@ -5,18 +5,6 @@
       "extra-files": [
         {
             "type": "json",
-            "path": "package.json",
-            "jsonpath": "$.version"
-        }, {
-            "type": "json",
-            "path": "package-lock.json",
-            "jsonpath": "$.version"
-        }, {
-            "type": "json",
-            "path": "package-lock.json",
-            "jsonpath": "$.packages..version"
-        }, {
-            "type": "json",
             "path": "webext/manifest-chromium.json",
             "jsonpath": "$.version"
         }, {
